@@ -1,7 +1,10 @@
 body{
-    background-color : rgb(231,230,230);
+    background-color : white );
     border : 1px solid gold;
     margin : 0px;
+}
+header{
+	
 }
 
 h1 {
