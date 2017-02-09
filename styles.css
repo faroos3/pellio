@@ -6,10 +6,11 @@ body{
 }
 header{
 	margin-top : 0px;
-	background-color : skyblue ;
+	background-color :#01579b;
     border: 1px solid gold;	
 
 }
+
 
 h1 {
     color:black;    
@@ -43,5 +44,9 @@ p {
     margin : 125px;
     padding : 5px;
     border : 1px solid gold;
+
+}
+.headerLink{
+   color: white; 
 
 }
