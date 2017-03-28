@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Sign Up</title>
+	<title>Register</title>
 	<meta name="description" content="insertDescriptionHere">
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.css">
@@ -48,14 +48,44 @@
 	<header>
 		<div class="jumbotron" style="background-color:#155ad1;color:#ffd633;">
 			<div class="container" style = "text-align:center;">
-				<h1>Sign Up</h1>
-                
+				<h1>Register</h1>
 			</div> 
 		</div> 
 	</header>
-		
-
-		
+	<div class="container">
+	    <form class="form-horizontal">
+	        <div class="form-group">
+				<label class="control-label col-sm-2" for="name">Name:</label>
+				<div class="col-sm-4">
+					<input type="firstName" class="form-control" id="firstNamr" placeholder="First">
+					<input type="lastName" class="form-control" id="lastName" placeholder="Last">
+				</div>
+   			 </div>
+			<div class="form-group">
+				<label class="control-label col-sm-2" for="name">Username:</label>
+				<div class="col-sm-4">
+					<input type="username" class="form-control" id="user" placeholder="Username">
+				</div>
+			</div>
+			<div class="form-group">
+			  	<label class="control-label col-sm-2" for="email">Email:</label>
+			  	<div class="col-sm-6">
+					<input type="email" class="form-control" id="email" placeholder="Email">
+			  	</div>
+			</div>
+			<div class="form-group">
+			  	<label class="control-label col-sm-2" for="pwd">Password:</label>
+			  	<div class="col-sm-5">          
+					<input type="password" class="form-control" id="pwd" placeholder="Password">
+			  	</div>
+			</div>
+			<div class="form-group">        
+			  	<div class="col-sm-offset-2 col-sm-10">
+					<button type="submit" class="btn btn-default">Register</button>
+			  	</div>
+			</div>
+	  	</form>	
+	</div>
 
 	<footer>
 		<div class="container">
