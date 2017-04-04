@@ -12,3 +12,6 @@ def index(request):
 
 def about(request):
     return render(request, 'base/about.html')
+
+def registration(request):
+    return render(request, 'base/registration.html')
