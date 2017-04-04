@@ -1,0 +1,52 @@
+body{
+    background-color : white ;
+    border : 1px solid gold;
+    margin : 0px;
+
+}
+header{
+	margin-top : 0px;
+	background-color :#01579b;
+    border: 1px solid gold;	
+
+}
+
+
+h1 {
+    color:black;    
+    font-size : 175%;
+    font-family:sans-serif;
+    margin : 21px;
+    padding: 7px;
+
+}
+
+h2 {
+    font-size:550%;
+    text-align : center;
+
+}
+#slogan{
+    text-align : center;
+    font-size:45%;
+    font-style : italic;
+
+}
+
+
+p {
+    padding: 1px;
+    margin : 6px;
+
+}
+
+.borderedbox{
+    margin : 125px;
+    padding : 5px;
+    border : 1px solid gold;
+
+}
+.headerLink{
+   color: white; 
+
+}
