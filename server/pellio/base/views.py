@@ -14,4 +14,6 @@ def about(request):
     return render(request, 'base/about.html')
 
 def registration(request):
+    if request.method == "POST":
+        pass #put the stuff here from the link Toshi gave. 
     return render(request, 'base/registration.html')
