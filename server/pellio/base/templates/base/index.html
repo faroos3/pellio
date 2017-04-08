@@ -24,7 +24,8 @@
 <div class="container" style="margin-top:200px;">
     <div class="row">
         <div class = "col-lg-6">
-              <img src="temp_image.jpeg" class="img-rounded" alt="Cinque Terre" width="451.685393" height="300" align="middle">
+			  {% load staticfiles %}
+              <img src="{% static 'base/img/temp_image.jpeg' %}" class="img-rounded" alt="Cinque Terre" width="451.685393" height="300" align="middle">
         </div>
         <div class = "col-lg-6" style = "text-align:center;margin-bottom:50px;font-size:35px">
        Log into a New Perspective
