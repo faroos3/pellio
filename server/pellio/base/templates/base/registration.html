@@ -6,15 +6,15 @@
     <nav class = "navbar navbar-inverse navbar-fixed-top" style = "font-color:red;">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Pellio</a>
+                <a class="navbar-brand" href="{% url 'index' %}">Pellio</a>
             </div>
             <ul class="nav navbar-nav">
-                <li class="active"><a href="landing_page.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li class="active"><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'about' %}">About</a></li>
                 <li><a href="#">Experiments</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="resistration.html"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+                <li><a href="{%url 'registration' %}"><span class="glyphicon glyphicon-user"></span> Register</a></li>
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
