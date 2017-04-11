@@ -1,0 +1,65 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*{
+  font-family: helvetica;
+}
+
+form input {
+	height: 42px;
+	width: 300px;
+}
+
+form input[type="submit"] {
+	font-style: 12px;
+	height: 38px;
+	width: 200px;
+}
+
+.welcomeBox{
+	display:block;
+	float:left;
+	margin-left: 7%;
+	width: 50%;
+	font-size: 69px;
+}
+
+.demoBox {
+	background-color: lightgrey;
+	float:right;
+	border: 2px solid black;
+	margin-top:100px;
+	margin-bottom:50px;
+	margin-right: 7%;
+	padding: 1.5%;
+	width: 750px;
+	height: 400px;
+	text-align:center;
+	font-size:12px
+}
+
+
+.aboutBox{
+	background-color: lightgrey;
+	clear:both;
+	border: 2px solid black;
+	padding: 8px;
+	float: left;
+	display: block;
+	margin-top: 100px;
+	margin-left: 7%;
+	height: 400px;
+	width: 400px;
+}
+
+.alreadyMemberBox{
+	padding-top: 60px;
+	font-size: 24px;
+}
+
+.innerbodydiv {
+	border: 1px solid black;
+}

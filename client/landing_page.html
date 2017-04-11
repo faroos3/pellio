@@ -16,6 +16,7 @@
 
     <!-- oh look its a style sheet!-->
     <link rel = "stylesheet" href = "styles.css">
+    <link rel = "stylesheet" href = "landing_page.css">
 
     <!-- ask if we're going to have it downloaded or not later today-->
 
@@ -23,20 +24,20 @@
 </head>
 
 <body>
+    <div class="innerbodydiv">
 
     <!-- navbar; for now we'll have the css be default-->
     <nav class = "navbar navbar-inverse navbar-fixed-top" style = "font-color:red;">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#" style = "padding-left:300px">PellioIcon
+                <a class="navbar-brand" href="#"><img style="height:110px" src="pellioSmile.png">
                 </a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="registration.html"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+                <li style = "color:white">Already a Member?<li>
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
-
     </nav>
 
 
@@ -44,29 +45,118 @@
 
 	</header>
 
-    <div class="container" style="margin-top:200px;">
+    <div class="main body div">
+        <h1 class="welcomeBox">Welcome to Pellio!</h1>
+        <div class = "alreadyMemberBox">Already a Member? Sign In</div>
+
         <div class="row">
-            <div class = "col-lg-6">
-                  <img src="temp_image.jpeg" class="img-rounded" alt="Cinque Terre" width="451.685393" height="300" align="middle">
+            <div class = "aboutBox">
+                 <h3 style="text-align: center">Who are we?</h3>
+                 <span>
+                 Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</span>
             </div>
-            <div class = "col-lg-6" style = "text-align:center;margin-bottom:50px;font-size:35px">
-           Log into a New Perspective
-                <br>
-                <form action="/action_page.php">
-                    <input type="text" name="username" value="Username" style="margin:10px;"><br>
-                    <input type="text" name="password" value="Password" style="margin:10px;"><br>
-                    <input type="submit" value="LOG IN" style="margin:10px;">
-                </form>
+            <div class = "demoBox">
+                <p>This scale consists of a number of words that describe different feelings and emotions. Read each item and then click on the dropdown list next to the word and select one of the responses. Indicate to what extent you feel this way right now, that is, at the present moment.</p>
+                <p>The scale is 1-5 equating to 'Very Slightly or Not At All', 'A Little', 'Moderately', 'Quite A Lot', and 'Extremely' respectively.</p>
+                <p>All questions must be completed for this questionnaire to be scored.</p>
+                <table class="PANASfeelingTable">
+                <thead>
+                <tr style="text-align:center; font-weight:bold">
+                <th>Feeling</th>
+                <th>Elaboration</th>
+                <th>Answer</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                <td>Interested</td>
+                <td>Showing curiosity or concern about something or someone; having a feeling of interest</td>
+                <td><select>
+                <option>Choose Answer</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                </select></td>
+                </tr>
+                <tr>
+                <td>Distressed</td>
+                <td>Suffering from anxiety, sorrow, or pain</td>
+                <td><select>
+                <option>Choose Answer</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                </select></td>
+                </tr>
+                <tr>
+                <td>Excited</td>
+                <td>Very enthusiastic and eager</td>
+                <td><select>
+                <option>Choose Answer</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                </select></td>
+                </tr>
+                <tr>
+                <td>Upset</td>
+                <td>Unhappy, disappointed, or worried</td>
+                <td><select>
+                <option>Choose Answer</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                </select></td>
+                </tr>
+                <tr>
+                <td>Strong</td>
+                <td>Feeling as though you can perform physically or mentally demanding tasks</td>
+                <td><select>
+                <option>Choose Answer</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                </select></td>
+                </tr>
+                <tr>
+                <td>Guilty</td>
+                <td>Feeling culpable of or responsible for a specified wrongdoing</td>
+                <td><select>
+                <option>Choose Answer</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                </select></td>
+                </tr>
+                </tbody>
+                </table>
+
+                <button class="prev">Prev</button>
+                <button class="next">Next</button>
             </div>
         </div>
     </div>
 
-    <P style="text-align:center;padding-top:300px;">
-        <a href="about.html">About</a> | <a href="https://www.google.com">Random </a> | <a href="www.something.com">Something </a> <br>
-        Copyright 2017 Some People
-    </P>
+    
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</div>
 </body>
+<P style="text-align:center;padding-top:50px;">
+        <a href="about.html">About</a> | <a href="https://www.google.com">Random </a> | <a href="www.something.com">Something </a> <br>
+        Copyright 2017 Some People
+    </P>
 </html>

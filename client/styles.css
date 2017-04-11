@@ -4,4 +4,34 @@ h1{
 
 body{
     background-color:#f5f5f5;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 110px;
+
 }
+
+nav{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.fLeft{
+	diplay: block;
+	float: left;
+}
+
+.fRight{
+	display: block;
+	float: right;
+}
+
+.cRight{
+	display: block;
+	clear: right;
+}
+
+.cLeft{
+	display: block;
+	clear: left;
+}
+
