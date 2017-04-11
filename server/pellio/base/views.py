@@ -5,7 +5,9 @@ from django.views.generic import View
 
 
 def index(request):
-    return render(request, 'base/index.html')
+    if request.method == "POST":
+        pass #put the stuff here from the link Toshi gave. 
+    return render(request, 'base/index.html', { 'page':"Pellio"})
 
 def about(request):
     return render(request, 'base/about.html')
@@ -13,7 +15,7 @@ def about(request):
 def registration(request):
     if request.method == "POST":
         pass #put the stuff here from the link Toshi gave. 
-    return render(request, 'base/registration.html')
+    return render(request, 'base/registration.html' , { "page":"Registration"} )
 
 """class UserFormView(View):
 	form_class = UserForm
