@@ -35,10 +35,17 @@ form input[type="submit"] {
 	margin-bottom:50px;
 	margin-right: 7%;
 	padding: 1.5%;
-	width: 750px;
+	width: 620px;
 	height: 400px;
 	text-align:center;
 	font-size:12px
+}
+
+.demoBox th,td{
+	text-align: center;
+	padding-left: 2%;
+	padding-right: 2%;
+	border: 1px solid black;
 }
 
 
@@ -56,10 +63,20 @@ form input[type="submit"] {
 }
 
 .alreadyMemberBox{
+	text-align: right;
+	margin-right: 7%;
 	padding-top: 60px;
 	font-size: 24px;
 }
 
+.alreadyMember{
+	font-size: 18px;
+
+}
+.signIn{
+	text-decoration: underline;
+	font-size: 18px
+}
 .innerbodydiv {
 	border: 1px solid black;
 }
