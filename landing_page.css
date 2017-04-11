@@ -1,0 +1,92 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*{
+  font-family: helvetica;
+}
+
+form input {
+	height: 42px;
+	width: 300px;
+}
+
+form input[type="submit"] {
+	font-style: 12px;
+	height: 38px;
+	width: 200px;
+}
+
+.welcomeBox{
+	display:block;
+	float:left;
+	
+	width: 50%;
+	font-size: 69px;
+}
+
+.demoBox {
+	background-color: lightgrey;
+	float:right;
+	border: 2px solid black;
+	margin-top:100px;
+	margin-bottom:50px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1.5%;
+	width: 50%;
+	min-width:440px;
+	height: 400px;
+	text-align:center;
+	font-size:12px
+}
+
+.demoBox th,td{
+	text-align: center;
+	padding-left: 2%;
+	padding-right: 2%;
+	margin-right: auto;
+	margin-left: auto;
+	border: 1px solid black;
+}
+
+
+.demoBox table{
+	margin:auto;
+	width: 95%;
+
+}
+
+
+.aboutBox{
+	background-color: lightgrey;
+	clear:both;
+	border: 2px solid black;
+	padding: 8px;
+	float: left;
+	display: block;
+	margin-top: 100px;
+	height: 400px;
+	width: 35%;
+	min-width: 280px;
+}
+
+.alreadyMemberBox{
+	text-align: right;
+	padding-top: 60px;
+	font-size: 24px;
+}
+
+.alreadyMember{
+	font-size: 18px;
+
+}
+.signIn{
+	text-decoration: underline;
+	font-size: 18px
+}
+.innerbodydiv {
+	border: 1px solid black;
+}
