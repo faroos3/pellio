@@ -23,16 +23,9 @@ class UserRegistrationForm(forms.ModelForm):
         max_length = 32,
     )
     password = forms.CharField(
-        widget=forms.PasswordInput
 		required = True,
         label = 'Password',
         max_length = 32,
         widget = forms.PasswordInput()
     )
 
-class UserForm(forms.ModelForm):
-	password = forms.CharField(widget=forms.PasswordInput)
-
-	class Meta:
-		model = User
-		Fields = ['firstName', 'lastName', 'email', 'password']
