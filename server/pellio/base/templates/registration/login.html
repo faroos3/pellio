@@ -15,8 +15,12 @@
             <br>
             <form method="POST">
 				{% csrf_token %}
-                <input type="username" name="username" placeholder="username" style="margin:10px;">
-                <input type="password" name="password" placeholder="Password"  style="margin:10px;">
+				<p>
+					<input type="username" name="username" placeholder="username" style="margin:10px;">
+				</p>
+				<p>
+					<input type="password" name="password" placeholder="Password"  style="margin:10px;">
+				</p>
 				<button type="submit">Login</button>
             </form>
         </div>

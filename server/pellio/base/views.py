@@ -6,27 +6,28 @@ from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect
 from django import forms
 from .forms import UserRegistrationForm
-
+from django.contrib.auth import views as auth_views
 
 def index(request):
-    if request.method == "POST":
-        pass #put the stuff here from the link Toshi gave. 
+
     return render(request, 'base/index.html', { 'page':"Pellio"})
 
 def about(request):
     return render(request, 'base/about.html')
+
+def experiments(request):
+    return render( request, 'base/experiments.html')
 
 def registration(request):
     if request.method == 'POST':
         form = UserRegistrationForm(request.POST)
         if form.is_valid():
             userObj = form.cleaned_data
-            username = userObj['username']
             email =  userObj['email']
             password =  userObj['password']
-            if not (User.objects.filter(username=username).exists() or User.objects.filter(email=email).exists()):
-                User.objects.create_user(username, email, password)
-                user = authenticate(username = username, password = password)
+            if not (User.objects.filter(email=email).exists() ):
+                User.objects.create_user( email, password)
+                user = authenticate(email = email, password = password)
                 login(request, user)
                 return HttpResponseRedirect('/')
             else:
