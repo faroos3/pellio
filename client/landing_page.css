@@ -19,33 +19,23 @@ form input[type="submit"] {
 	width: 200px;
 }
 
-.welcomeBox{
-	display:block;
-	float:left;
-	margin-left: 7%;
-	width: 50%;
-	font-size: 69px;
-}
-
 .demoBox {
 	background-color: lightgrey;
-	float:right;
 	border: 2px solid black;
-	margin-top:100px;
-	margin-bottom:50px;
-	margin-right: 7%;
-	padding: 1.5%;
-	width: 620px;
 	height: 400px;
-	text-align:center;
-	font-size:12px
+	font-size:12px;
 }
-
+.demoBox h3{
+	text-align:center;
+}
 .demoBox th,td{
 	text-align: center;
-	padding-left: 2%;
-	padding-right: 2%;
+	
+	
 	border: 1px solid black;
+}
+.demoBox table{
+
 }
 
 
@@ -53,20 +43,11 @@ form input[type="submit"] {
 	background-color: lightgrey;
 	clear:both;
 	border: 2px solid black;
-	padding: 8px;
-	float: left;
 	display: block;
-	margin-top: 100px;
-	margin-left: 7%;
 	height: 400px;
-	width: 400px;
 }
-
-.alreadyMemberBox{
-	text-align: right;
-	margin-right: 7%;
-	padding-top: 60px;
-	font-size: 24px;
+.aboutBox h3{
+	text-align: center;
 }
 
 .alreadyMember{
@@ -79,4 +60,9 @@ form input[type="submit"] {
 }
 .innerbodydiv {
 	border: 1px solid black;
+}
+
+.navButtons{
+	float:right;
+	margin-top: 15px;
 }

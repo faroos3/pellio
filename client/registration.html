@@ -23,70 +23,64 @@
 </head>
 
 <body>
-
-    <!-- navbar; for now we'll have the css be default-->
+    
+     <!-- navbar; for now we'll have the css be default-->
     <nav class = "navbar navbar-inverse navbar-fixed-top" style = "font-color:red;">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#">Pellio</a>
+                <a class="navbar-brand" href="#" style = "padding-top:0px"><img style="height:90px" src="pellioSmile.png">
+                </a>
             </div>
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="landing_page.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="#">Experiments</a></li>
-            </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="resistration.html"><span class="glyphicon glyphicon-user"></span> Register</a></li>
+                <li style = "color:white">Already a Member?<li>
                 <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
             </ul>
         </div>
-    
     </nav>
     
     
     
-	<header>
-		<div class="jumbotron" style="background-color:#155ad1;color:#ffd633;">
-			<div class="container" style = "text-align:center;">
-				<h1>Register</h1>
-			</div> 
-		</div> 
-	</header>
+	<div class= "mainBody">
+	<div class="page-header">
+		<h1 class="registerBox">
+			Register
+		</h1>
+	</div>
 	<div class="container">
 	    <form class="form-horizontal">
 	        <div class="form-group">
-				<label class="control-label col-sm-2" for="name">Name:</label>
-				<div class="col-sm-4">
+				<label class="control-label col-lg-2 col-lg-offset-3" for="name">Name:</label>
+				<div class="col-lg-4">
 					<input type="firstName" class="form-control" id="firstName" placeholder="First">
 					<input type="lastName" class="form-control" id="lastName" placeholder="Last">
 				</div>
-   			 </div>
+   			</div>
 			<div class="form-group">
-				<label class="control-label col-sm-2" for="name">Username:</label>
-				<div class="col-sm-4">
+				<label class="control-label col-lg-2 col-lg-offset-3" for="name">Username:</label>
+				<div class="col-lg-4">
 					<input type="username" class="form-control" id="user" placeholder="Username">
 				</div>
 			</div>
 			<div class="form-group">
-			  	<label class="control-label col-sm-2" for="email">Email:</label>
-			  	<div class="col-sm-4">
+			  	<label class="control-label col-lg-2 col-lg-offset-3" for="email">Email:</label>
+			  	<div class="col-lg-4">
 					<input type="email" class="form-control" id="email" placeholder="Email">
 			  	</div>
 			</div>
 			<div class="form-group">
-			  	<label class="control-label col-sm-2" for="pwd">Password:</label>
-			  	<div class="col-sm-4">          
+			  	<label class="control-label col-lg-2 col-lg-offset-3" for="pwd">Password:</label>
+			  	<div class="col-lg-4">          
 					<input type="password" class="form-control" id="pwd" placeholder="Password">
 			  	</div>
 			</div>
 			<div class="form-group">
-			  	<label class="control-label col-sm-2" for="pwd">Re-type password:</label>
-			  	<div class="col-sm-4">          
+			  	<label class="control-label col-lg-2 col-lg-offset-3" for="pwd">Re-type password:</label>
+			  	<div class="col-lg-4">          
 					<input type="password" class="form-control" id="pwd" placeholder="Confirm password">
 			  	</div>
 			</div>
 			<div class="form-group">        
-			  	<div class="col-sm-offset-2 col-sm-10">
+			  	<div class="col-lg-offset-8">
 					<button type="submit" class="btn btn-default">Register</button>
 			  	</div>
 			</div>

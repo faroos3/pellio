@@ -24,13 +24,12 @@
 </head>
 
 <body>
-    <div class="innerbodydiv">
 
     <!-- navbar; for now we'll have the css be default-->
     <nav class = "navbar navbar-inverse navbar-fixed-top" style = "font-color:red;">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#"><img style="height:110px" src="pellioSmile.png">
+                <a class="navbar-brand" href="#" style = "padding-top:0px"><img style="height:90px" src="pellioSmile.png">
                 </a>
             </div>
             <ul class="nav navbar-nav navbar-right">
@@ -45,21 +44,19 @@
 
 	</header>
 
-    <div class="main body div">
-        <h1 class="welcomeBox">Welcome to Pellio!</h1>
-        <div class = "alreadyMemberBox">
-            <div class="alreadyMember">Already a Member?</div>
-            <div class="signIn"><u>Sign In</u> </div>
+    <div class="container mainBody">
+        <div class="page-header">
+        <h1 class="welcomeBox">Welcome to Pellio!</3h1>
         </div>
 
         <div class="row">
-            <div class = "aboutBox">
-                 <h3 style="text-align: center"><strong>What's Pellio about?</strong></h3>
+            <div class = "col-lg-4 col-md-4 aboutBox well">
+                 <h3><strong>What's Pellio about?</strong></h3>
                  <span>
                  Pellio is a positive psychology website that is aimed at helping college students learn how to deal with the mental load that comes with moving on to a new part of life. We focus on showing you how you can make yourself happier on a daily basis :)</span>
             </div>
-            <div class = "demoBox">
-                <h3 style = "margin-top: 0px"><strong>Give it a try!</strong></h3>
+            <div class = "col-lg-7 col-md-7 col-md-offset-1 demoBox well">
+                <h3><strong>Give it a try!</strong></h3>
                 <p>This scale consists of a number of words that describe different feelings and emotions. Read each item and then click on the dropdown list next to the word and select one of the responses. Indicate to what extent you feel this way right now, that is, at the present moment.</p>
                 <p>The scale is 1-5 equating to 'Very Slightly or Not At All', 'A Little', 'Moderately', 'Quite A Lot', and 'Extremely' respectively.</p>
                 <p>All questions must be completed for this questionnaire to be scored.</p>
@@ -146,18 +143,19 @@
                 </tr>
                 </tbody>
                 </table>
-
-                <button class="prev">Prev</button>
-                <button class="next">Next</button>
+                <div class="navButtons">
+                    <button class="prev">Prev</button>
+                    <button class="next">Next</button>
+                </div>
             </div>
         </div>
+        <div class = "col-lg-2 col-md-1"></div>
     </div>
 
     
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-</div>
 </body>
 <P style="text-align:center;padding-top:50px;">
         <a href="about.html">About</a> | <a href="https://www.google.com">Random </a> | <a href="www.something.com">Something </a> <br>
