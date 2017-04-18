@@ -3,10 +3,6 @@ body{
     margin-top: 84px;
 
 }
-.innerbodydiv{
-	padding-left: 7%;
-	padding-right: 7%;
-}
 
 /*nav{
 	padding-left: 15%;
@@ -37,6 +33,12 @@ body{
 /*REGISTRATION.HTML*/
 
 .registerBox{
-	margin-left: 35%;
 	margin-top: 200px;
+}
+.welcomeBox{
+	font-size: 54px;
+}
+
+.page-header{
+	margin-top:35px;
 }
