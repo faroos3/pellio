@@ -50,13 +50,11 @@ Pellio would also have administrative accounts that are meant for developers. Me
 
 * Bootstrap for styling. 
 
-* PHP and SQL for server communication and database management. 
+* SQL for server communication and database management. 
 
-* Javascript for animations and accessibility. 
+* Javascript for animations and accessibility (eventually!) 
 
-* Git for version control and development. 
-
-* Python to generate graphs based on user data for users and researches to view. 
+* Django (Python Web Framework) 
 
 ## Getting Started
 Instructions for command line package installation will be for Debian-based distributions like Ubuntu
