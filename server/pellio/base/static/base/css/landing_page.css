@@ -1,0 +1,68 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*{
+  font-family: helvetica;
+}
+
+form input {
+	height: 42px;
+	width: 300px;
+}
+
+form input[type="submit"] {
+	font-style: 12px;
+	height: 38px;
+	width: 200px;
+}
+
+#demoBox {
+	background-color: lightgrey;
+	border: 2px solid black;
+	height: 400px;
+	font-size:12px;
+}
+#demo1q h3{
+	text-align:center;
+}
+#demo th,td{
+	text-align: center;
+	
+	
+	border: 1px solid black;
+}
+#demoBox table{
+
+}
+
+
+#aboutBox{
+	background-color: lightgrey;
+	clear:both;
+	border: 2px solid black;
+	display: block;
+	height: 400px;
+}
+#aboutBox h3{
+	text-align: center;
+}
+
+.alreadyMember{
+	font-size: 18px;
+
+}
+.signIn{
+	text-decoration: underline;
+	font-size: 18px
+}
+.innerbodydiv {
+	border: 1px solid black;
+}
+
+.navButtons{
+	float:right;
+	margin-top: 15px;
+}
