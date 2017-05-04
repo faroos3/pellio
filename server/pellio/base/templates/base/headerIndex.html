@@ -12,31 +12,28 @@
 
     <!-- chagne this later when pushing to git-->
     <link rel="stylesheet" href="bootstrap-3.3.7-dist\css\font-awesome.min.css">
+    {% load staticfiles %}
+    <script src= {% static 'base/js/jquery-3.2.1.min.js' %} ></script>
 
 
 
 </head>
 
-<body>
-	<!-- navbar; for now we'll have the css be default-->
-	<nav class = "navbar navbar-inverse navbar-fixed-top" style = "font-color:red;">
-		<div class="container-fluid">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="" style = "padding-left:300px">PellioIcon
-				</a>
-			</div>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="registration/"><span class="glyphicon glyphicon-user"></span> Register</a></li>
-			</ul>
-		</div>
+<script>
+    $(document).ready(function(){
+        $('#demoBox').hide();
+        $('#demo1q').hide();
+        $('#demoVid').hide();
+        $('#demo2q').hide();
+        $('#demoReg').hide();
+    });
+</script>
 
-	</nav>
 
-	
-  {% block content %}
-  {% endblock %}
 
-</body>
+	{% block content %}
+	{% endblock %}
+
 
 <footer>
 	<P style="text-align:center;padding-top:300px;">
