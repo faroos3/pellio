@@ -2,15 +2,15 @@ from django.contrib.auth.models import User
 from django import forms
 
 class UserRegistrationForm(forms.Form):
-    FirstName = forms.CharField(
+    FirstName = forms.CharField( 
         required = False,
         label = 'First Name',
-        max_length = 32,
+        max_length = 32,  
     )
     LastName = forms.CharField(
         required = False,
         label = 'Last Name',
-        max_length = 32, 
+        max_length = 32,
     )
     email = forms.CharField(
         required = True,
