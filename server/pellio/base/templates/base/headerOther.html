@@ -12,48 +12,40 @@
 
     <!-- chagne this later when pushing to git-->
     <link rel="stylesheet" href="bootstrap-3.3.7-dist\css\font-awesome.min.css">
+    <!-- oh look its a style sheet!-->
+    {% load staticfiles %}
+    <link rel = "stylesheet" href = {% static 'base/static/css/styles.css' %}>    
+    
 
 
 
 </head>
 
 <body>
-	<!-- navbar; for now we'll have the css be default-->
-		<nav class = "navbar navbar-inverse navbar-fixed-top" style = "font-color:red;">
-			<div class="container-fluid">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="{% url 'index' %}">Pellio</a>
-				</div>
-				<ul class="nav navbar-nav">
-					<li><a href="{% url 'about' %}">About</a></li>
-					<li><a href="#">Experiments</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					
-					<li><a href="{% url 'index' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
 
-				</ul>
-			</div>
-
-		</nav>
-
+    <!-- navbar; for now we'll have the css be default-->
+    <nav class = "navbar navbar-inverse navbar-fixed-top" style = "font-color:red;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+		    {% load staticfiles %}
+		    <a class="navbar-brand" href="#" style = "padding-top:0px"><img style="height:90px" src={% static "base/img/pellioSmile.png" %}>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="landing_page.html">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="#">Experiments</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="home">Account</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>Logout</a></li>
+            </ul>
+        </div>
+    </nav>
 
   {% block content %}
   {% endblock %}
 
 </body>
-
-<footer>
-    <P style="text-align:center;padding-top:300px;">
-        <a href="{% url 'about' %}">About</a> | <a href="https://www.google.com">Random </a> | <a href="www.something.com">Something </a> <br>
-        Copyright 2017 Some People
-    </P>
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-</footer>
-
 
 </html>
 
